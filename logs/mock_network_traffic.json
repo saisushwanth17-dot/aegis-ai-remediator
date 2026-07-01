@@ -1,0 +1,224 @@
+[
+  {
+    "timestamp": "2026-07-02T08:05:12Z",
+    "employee_id": "EMP-0142",
+    "source_ip": "10.0.1.45",
+    "destination_endpoint": "slack.com/api/chat.postMessage",
+    "payload_size_kb": 2.4,
+    "headers": {
+      "User-Agent": "Slack-Client/4.32",
+      "Authorization": "Bearer xoxb-..."
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:10:22Z",
+    "employee_id": "EMP-0891",
+    "source_ip": "10.0.2.112",
+    "destination_endpoint": "github.com/api/v3/repos/push",
+    "payload_size_kb": 150.8,
+    "headers": {
+      "User-Agent": "git/2.39.2",
+      "Content-Type": "application/x-git-pack"
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:12:05Z",
+    "employee_id": "EMP-0322",
+    "source_ip": "10.0.1.77",
+    "destination_endpoint": "outlook.office365.com/api/v2.0/me/messages",
+    "payload_size_kb": 5.1,
+    "headers": {
+      "User-Agent": "Outlook-Mobile/16.0",
+      "Authorization": "Bearer eyJ..."
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:15:33Z",
+    "employee_id": "EMP-0921",
+    "source_ip": "10.0.3.44",
+    "destination_endpoint": "api.zoom.us/v2/users/me/meetings",
+    "payload_size_kb": 1.2,
+    "headers": {
+      "User-Agent": "Zoom/5.14.0",
+      "Content-Type": "application/json"
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:20:11Z",
+    "employee_id": "EMP-0142",
+    "source_ip": "10.0.1.45",
+    "destination_endpoint": "slack.com/api/users.list",
+    "payload_size_kb": 8.5,
+    "headers": {
+      "User-Agent": "Slack-Client/4.32",
+      "Authorization": "Bearer xoxb-..."
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:22:45Z",
+    "employee_id": "EMP-0555",
+    "source_ip": "10.0.2.22",
+    "destination_endpoint": "jira.company.com/rest/api/2/issue",
+    "payload_size_kb": 12.0,
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "Cookie": "JSESSIONID=..."
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:25:10Z",
+    "employee_id": "EMP-0891",
+    "source_ip": "10.0.2.112",
+    "destination_endpoint": "github.com/api/v3/repos/pulls",
+    "payload_size_kb": 3.4,
+    "headers": {
+      "User-Agent": "git/2.39.2",
+      "Authorization": "token ghp_..."
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:28:05Z",
+    "employee_id": "EMP-0322",
+    "source_ip": "10.0.1.77",
+    "destination_endpoint": "outlook.office365.com/EWS/Exchange.asmx",
+    "payload_size_kb": 22.1,
+    "headers": {
+      "User-Agent": "MacOutlook/16.73",
+      "Content-Type": "text/xml"
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:30:55Z",
+    "employee_id": "EMP-0411",
+    "source_ip": "10.0.4.15",
+    "destination_endpoint": "confluence.company.com/rest/api/content",
+    "payload_size_kb": 45.2,
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+      "Authorization": "Basic YWxp..."
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:33:20Z",
+    "employee_id": "EMP-0678",
+    "source_ip": "10.0.5.88",
+    "destination_endpoint": "slack.com/api/files.upload",
+    "payload_size_kb": 2048.5,
+    "headers": {
+      "User-Agent": "Slack-Client/4.32",
+      "Content-Type": "multipart/form-data"
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:35:12Z",
+    "employee_id": "EMP-0142",
+    "source_ip": "10.0.1.45",
+    "destination_endpoint": "slack.com/api/conversations.history",
+    "payload_size_kb": 15.6,
+    "headers": {
+      "User-Agent": "Slack-Client/4.32",
+      "Authorization": "Bearer xoxb-..."
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:40:01Z",
+    "employee_id": "EMP-0891",
+    "source_ip": "10.0.2.112",
+    "destination_endpoint": "github.com/api/v3/issues",
+    "payload_size_kb": 2.1,
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "Accept": "application/vnd.github.v3+json"
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:42:33Z",
+    "employee_id": "EMP-0322",
+    "source_ip": "10.0.1.77",
+    "destination_endpoint": "login.microsoftonline.com/common/oauth2/v2.0/token",
+    "payload_size_kb": 0.8,
+    "headers": {
+      "User-Agent": "Microsoft Office/16.0",
+      "Content-Type": "application/x-www-form-urlencoded"
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:45:15Z",
+    "employee_id": "EMP-0921",
+    "source_ip": "10.0.3.44",
+    "destination_endpoint": "drive.google.com/drive/v3/files",
+    "payload_size_kb": 35.4,
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "Authorization": "Bearer ya29..."
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:50:00Z",
+    "employee_id": "EMP-0555",
+    "source_ip": "10.0.2.22",
+    "destination_endpoint": "jira.company.com/rest/api/2/search",
+    "payload_size_kb": 8.9,
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "Content-Type": "application/json"
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:51:11Z",
+    "employee_id": "EMP-0701",
+    "source_ip": "10.0.8.12",
+    "destination_endpoint": "10.0.8.12:11434/api/generate",
+    "payload_size_kb": 105.2,
+    "headers": {
+      "User-Agent": "curl/7.81.0",
+      "Content-Type": "application/json"
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:55:22Z",
+    "employee_id": "EMP-0419",
+    "source_ip": "10.0.6.55",
+    "destination_endpoint": "api.anthropic.com/v1/messages",
+    "payload_size_kb": 8540.5,
+    "headers": {
+      "User-Agent": "claude-code/0.1.0",
+      "x-api-key": "sk-ant-...",
+      "anthropic-version": "2023-06-01"
+    }
+  },
+  {
+    "timestamp": "2026-07-02T08:58:05Z",
+    "employee_id": "EMP-0888",
+    "source_ip": "10.0.4.99",
+    "destination_endpoint": "10.0.4.99:3000/mcp/connect",
+    "payload_size_kb": 12.3,
+    "headers": {
+      "User-Agent": "MCP-Client/1.2",
+      "Authorization": "Bearer mcp-token-xyz"
+    }
+  },
+  {
+    "timestamp": "2026-07-02T09:02:14Z",
+    "employee_id": "EMP-0210",
+    "source_ip": "10.0.3.15",
+    "destination_endpoint": "playground.openai.com/api/data_upload",
+    "payload_size_kb": 850.4,
+    "headers": {
+      "User-Agent": "InternalApp-DataSync/2.1",
+      "Content-Type": "application/json"
+    }
+  },
+  {
+    "timestamp": "2026-07-02T09:05:45Z",
+    "employee_id": "EMP-0999",
+    "source_ip": "10.0.9.42",
+    "destination_endpoint": "api.amazon.com/checkout",
+    "payload_size_kb": 2.1,
+    "headers": {
+      "User-Agent": "Agent-LLM-Autonomous/1.0",
+      "Authorization": "Bearer amzn1...",
+      "Content-Type": "application/json"
+    }
+  }
+]

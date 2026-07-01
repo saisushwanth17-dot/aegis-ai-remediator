@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Security Warning</title>
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --card-bg: #1a1a1a;
+            --danger-red: #ff3333;
+            --danger-dark: #cc0000;
+            --text-main: #f0f0f0;
+            --text-muted: #888888;
+            --border-color: #333333;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .compliance-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--danger-dark);
+            border-top: 5px solid var(--danger-red);
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(255, 51, 51, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .compliance-card::before {
+            content: "UNAUTHORIZED AI ACTIVITY";
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 80px;
+            font-weight: 900;
+            color: rgba(255, 51, 51, 0.03);
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .icon-warning {
+            color: var(--danger-red);
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 51, 51, 0.1);
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        h2 {
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            color: var(--danger-red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .details-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .detail-row {
+            display: flex;
+            margin-bottom: 12px;
+        }
+
+        .detail-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .detail-label {
+            width: 140px;
+            color: var(--text-muted);
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .detail-value {
+            flex: 1;
+            font-family: monospace;
+            font-size: 14px;
+            color: #fff;
+            word-break: break-all;
+        }
+
+        .highlight {
+            color: var(--danger-red);
+            font-weight: bold;
+        }
+
+        p.description {
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        button {
+            flex: 1;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-justify {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-justify:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: #555;
+        }
+
+        .btn-disconnect {
+            background-color: var(--danger-dark);
+            color: white;
+            box-shadow: 0 4px 15px rgba(204, 0, 0, 0.3);
+        }
+
+        .btn-disconnect:hover {
+            background-color: var(--danger-red);
+            box-shadow: 0 4px 20px rgba(255, 51, 51, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .footer-note {
+            margin-top: 25px;
+            font-size: 12px;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="compliance-card">
+    <div class="header">
+        <div class="icon-warning">⚠️</div>
+        <div>
+            <h2>Aegis Zero Trust</h2>
+            <h1>Shadow AI Policy Violation</h1>
+        </div>
+    </div>
+
+    <p class="description">
+        Your device has initiated an unauthorized connection using an unmapped AI agent or protocol. This action violates the <strong>Corporate Acceptable Use Policy (Sec-44)</strong> regarding shadow AI tooling and data exfiltration.
+    </p>
+
+    <div class="details-box">
+        <div class="detail-row">
+            <div class="detail-label">Violation Type</div>
+            <div class="detail-value highlight">Unmapped Model Context Protocol (MCP) Server</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Timestamp</div>
+            <div class="detail-value" id="current-time"></div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Source IP</div>
+            <div class="detail-value">10.0.4.99</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Target Endpoint</div>
+            <div class="detail-value">10.0.4.99:3000/mcp/connect</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Detected Agent</div>
+            <div class="detail-value">MCP-Client/1.2</div>
+        </div>
+    </div>
+
+    <div class="actions">
+        <button class="btn-justify" onclick="justifyUsage()">Justify Usage</button>
+        <button class="btn-disconnect" onclick="disconnect()">Disconnect</button>
+    </div>
+    
+    <div class="footer-note">
+        Incident logged under reference #AI-SEC-89104. Repeated violations may result in network isolation.
+    </div>
+</div>
+
+<script>
+    document.getElementById('current-time').innerText = new Date().toISOString();
+
+    function justifyUsage() {
+        alert("Requesting justification workflow. Please wait to be redirected to the IT Service Desk...");
+    }
+
+    function disconnect() {
+        alert("Connection severed. Network traffic blocked for this agent.");
+        document.body.style.opacity = '0.5';
+    }
+</script>
+
+</body>
+</html>
